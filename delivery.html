@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Условия доставки | Mamma Mia Пиццерия</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-pizza-slice me-2"></i>Mamma Mia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="delivery.html">Доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#menu">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#reviews">Отзывы</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="fas fa-shopping-cart"></i> Корзина
+                    </button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fas fa-user"></i> Вход
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="delivery-hero">
+        <div class="container text-center text-white py-5">
+            <h1 class="display-4 fw-bold">Условия доставки</h1>
+            <p class="lead">Быстрая и удобная доставка пиццы по Волгодонску</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">Как мы доставляем</h2>
+                    <p>Мы доставляем пиццу быстро и горячей, чтобы вы могли насладиться ее вкусом в лучшем виде. Наши курьеры работают ежедневно с 10:00 до 23:00.</p>
+                    
+                    <div class="row mt-5">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-danger">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-motorcycle text-danger mb-3" style="font-size: 3rem;"></i>
+                                    <h3>Доставка курьером</h3>
+                                    <p>Быстрая доставка по всему Волгодонску</p>
+                                    <p><strong>Минимальный заказ:</strong> 500 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-danger">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-store text-danger mb-3" style="font-size: 3rem;"></i>
+                                    <h3>Самовывоз</h3>
+                                    <p>Заберите заказ в нашей пиццерии по адресу: ул. Весенняя, 56А</p>
+                                    <p><strong>Готовность:</strong> 20-30 минут</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">Зоны доставки</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-danger">
+                                <tr>
+                                    <th>Район</th>
+                                    <th>Время доставки</th>
+                                    <th>Стоимость</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Новый город</td>
+                                    <td>20-30 минут</td>
+                                    <td>200 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Старый город</td>
+                                    <td>40-50 минут</td>
+                                    <td>250 ₽</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">Оплата</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3><i class="fas fa-money-bill-wave text-danger me-2"></i>Наличными</h3>
+                                    <p>Вы можете оплатить заказ наличными курьеру при получении.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3><i class="fas fa-credit-card text-danger me-2"></i>Картой</h3>
+                                    <p>Оплата банковской картой онлайн или курьеру при получении.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info mt-5">
+                        <h4><i class="fas fa-info-circle me-2"></i>Важно!</h4>
+                        <ul>
+                            <li>Минимальная сумма заказа для доставки - 500 ₽</li>
+                            <li>При отмене заказа менее чем за 15 минут до доставки взимается штраф 200 ₽</li>
+                            <li>Мы гарантируем возврат денег, если вы недовольны качеством нашей пиццы</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Подвал -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Mamma Mia Пиццерия</h5>
+                    <p>Лучшая пицца в городе с 2010 года. Готовим с любовью!</p>
+                    <div class="mt-4">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> г. Волгодонск, ул. Весенняя,56А</p>
+                        <p><i class="fas fa-phone me-2"></i> +7 (123) 456-78-90</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@mammamia.ru</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Часы работы</h5>
+                    <p>Пн-Пт: 10:00 - 23:00</p>
+                    <p>Сб-Вс: 11:00 - 00:00</p>
+                    <div class="mt-4">
+                        <h5 class="mb-3">Мы в соцсетях</h5>
+                        <div class="social-links">
+                            <a href="#" class="text-white me-3"><i class="fab fa-vk fa-lg"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-lg"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Подписаться на новости</h5>
+                    <p>Узнавайте первыми о новых акциях и специальных предложениях!</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Ваш email">
+                        <button class="btn btn-danger" type="button">Подписаться</button>
+                    </div>
+                    <p><small>Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</small></p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Mamma Mia Пиццерия. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

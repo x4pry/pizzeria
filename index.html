@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamma Mia Пиццерия | Волгодонск</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-pizza-slice me-2"></i>Mamma Mia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delivery.html">Доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Отзывы</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="fas fa-shopping-cart"></i> Корзина
+                    </button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fas fa-user"></i> Вход
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero-banner">
+        <div class="container text-center text-white py-5">
+            <h1 class="display-4 fw-bold">Лучшая пицца в Волгодонске</h1>
+            <p class="lead">Свежие ингредиенты, традиционные рецепты и быстрая доставка</p>
+            <a href="#menu" class="btn btn-danger btn-lg mt-3">Заказать сейчас</a>
+        </div>
+    </section>
+
+    <!-- Меню -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Наше меню</h2>
+            <div class="row g-4">
+                <!-- Пицца 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card product-card h-100">
+                        <img src="img/p1.jpg" class="card-img-top" alt="Маргарита">
+                        <div class="card-body">
+                            <h5 class="card-title">Маргарита</h5>
+                            <p class="card-text">Классическая пицца с томатным соусом, моцареллой и базиликом.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Хит</span>
+                                <span class="price">450 ₽</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button class="btn btn-danger w-100 add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Пицца 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card product-card h-100">
+                        <img src="img/p2.png" class="card-img-top" alt="Пепперони">
+                        <div class="card-body">
+                            <h5 class="card-title">Пепперони</h5>
+                            <p class="card-text">Острая пицца с колбасками пепперони и сыром моцарелла.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-danger">Остро</span>
+                                <span class="price">550 ₽</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button class="btn btn-danger w-100 add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Пицца 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card product-card h-100">
+                        <img src="img/p3.jpg" class="card-img-top" alt="Гавайская">
+                        <div class="card-body">
+                            <h5 class="card-title">Гавайская</h5>
+                            <p class="card-text">Пицца с курицей, ананасами и сыром моцарелла.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-warning text-dark">Новинка</span>
+                                <span class="price">500 ₽</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button class="btn btn-danger w-100 add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Пицца 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card product-card h-100">
+                        <img src="img/p4.jpg" class="card-img-top" alt="Четыре сыра">
+                        <div class="card-body">
+                            <h5 class="card-title">Четыре сыра</h5>
+                            <p class="card-text">Пицца с моцареллой, горгонзолой, пармезаном и фетой.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info">Сырная</span>
+                                <span class="price">600 ₽</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button class="btn btn-danger w-100 add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Пицца 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card product-card h-100">
+                        <img src="img/p5.jpeg" class="card-img-top" alt="Мясная">
+                        <div class="card-body">
+                            <h5 class="card-title">Мясная</h5>
+                            <p class="card-text">Пицца с ветчиной, пепперони, беконом и курицей.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-dark">Мясная</span>
+                                <span class="price">650 ₽</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button class="btn btn-danger w-100 add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Пицца 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card product-card h-100">
+                        <img src="img/p6.jpg" class="card-img-top" alt="Вегетарианская">
+                        <div class="card-body">
+                            <h5 class="card-title">Вегетарианская</h5>
+                            <p class="card-text">Пицца с болгарским перцем, помидорами, грибами и оливками.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Вегетарианская</span>
+                                <span class="price">500 ₽</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <button class="btn btn-danger w-100 add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Акции -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Наши акции</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-danger">
+                        <div class="card-body text-center">
+                            <i class="fas fa-pizza-slice text-danger mb-3" style="font-size: 3rem;"></i>
+                            <h3 class="card-title">2 пиццы по цене 1</h3>
+                            <p class="card-text">При заказе двух пицц "Маргарита" - вторая бесплатно!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-danger">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock text-danger mb-3" style="font-size: 3rem;"></i>
+                            <h3 class="card-title">Скидка 20%</h3>
+                            <p class="card-text">При заказе с 12:00 до 15:00 - скидка 20% на все пиццы!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-danger">
+                        <div class="card-body text-center">
+                            <i class="fas fa-birthday-cake text-danger mb-3" style="font-size: 3rem;"></i>
+                            <h3 class="card-title">Пицца в подарок</h3>
+                            <p class="card-text">В день рождения - пицца "Маргарита" в подарок!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Отзывы наших клиентов</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Лучшая пицца в городе! Заказываю регулярно, всегда свежая и вкусная. Особенно нравится Пепперони - острая, как я люблю."</p>
+                            <div>
+                                <h6 class="mb-0">Иван</h6>
+                                <small class="text-muted">Постоянный клиент</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="card-text">"Очень вкусно! Заказывали на вечеринку, все остались довольны. Доставка быстрая, пицца горячая. Рекомендую!"</p>
+                            <div>
+                                <h6 class="mb-0">Анна</h6>
+                                <small class="text-muted">Новый клиент</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-5">Обратная связь</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agree">
+                            <label class="form-check-label" for="agree">Я согласен на обработку персональных данных</label>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Mamma Mia Пиццерия</h5>
+                    <p>Лучшая пицца в Волгодонске с 2010 года. Готовим с любовью!</p>
+                    <div class="mt-4">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> г. Волгодонск, ул. Весенняя, 56А</p>
+                        <p><i class="fas fa-phone me-2"></i> +7 (123) 456-78-90</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@mammamia.ru</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Часы работы</h5>
+                    <p>Пн-Пт: 10:00 - 23:00</p>
+                    <p>Сб-Вс: 11:00 - 00:00</p>
+                    <div class="mt-4">
+                        <h5 class="mb-3">Мы в соцсетях</h5>
+                        <div class="social-links">
+                            <a href="#" class="text-white me-3"><i class="fab fa-vk fa-lg"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-lg"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Подписаться на новости</h5>
+                    <p>Узнавайте первыми о новых акциях и специальных предложениях!</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Ваш email">
+                        <button class="btn btn-danger" type="button">Подписаться</button>
+                    </div>
+                    <p><small>Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</small></p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Mamma Mia Пиццерия. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ваша корзина</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-items">
+                        <p class="text-center">Ваша корзина пуста</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Продолжить покупки</button>
+                    <button type="button" class="btn btn-danger">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Вход в аккаунт</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Запомнить меня</label>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100">Войти</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Нет аккаунта? <a href="#" class="text-danger">Зарегистрируйтесь</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const productCard = this.closest('.product-card');
+                const productName = productCard.querySelector('.card-title').textContent;
+                const productPrice = productCard.querySelector('.price').textContent;
+                alert(`"${productName}" добавлена в корзину за ${productPrice}`);
+            });
+        });
+    </script>
+</body>
+</html>
